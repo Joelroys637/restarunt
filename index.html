@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joelx Orbit | Modern Fine Dining</title>
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-center">
+            <div class="nav-header">
+                <a href="#home" class="nav-logo">Joelx Orbit<span>.</span></a>
+                <button class="nav-toggle" id="nav-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#menu" class="nav-link">Menu</a></li>
+                <li><a href="#specials" class="nav-link">Specials</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#about" class="nav-link">About Us</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content fade-in">
+            <h1>Taste The Perfection</h1>
+            <p>Experience culinary excellence with locally sourced ingredients and world-class chefs.</p>
+            <a href="#menu" class="btn">Explore Menu</a>
+        </div>
+    </section>
+
+    <!-- Introduction / About Preview -->
+    <section class="intro section-center">
+        <div class="intro-text fade-in">
+            <h2>Welcome to Joelx Orbit</h2>
+            <p>Nestled in the heart of the city, Joelx Orbit offers an unforgettable dining experience. Our passion for
+                food
+                is reflected in every dish we serve, combining traditional flavors with modern innovation.</p>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu section-padding">
+        <div class="section-title fade-in">
+            <h2>Our Menu</h2>
+            <div class="underline"></div>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="filter-btn-container fade-in">
+            <button class="filter-btn active" data-id="all">All</button>
+            <button class="filter-btn" data-id="veg">Veg</button>
+            <button class="filter-btn" data-id="non-veg">Non-Veg</button>
+            <button class="filter-btn" data-id="drinks">Drinks</button>
+            <button class="filter-btn" data-id="desserts">Desserts</button>
+        </div>
+
+        <div class="menu-center section-center">
+            <!-- Menu Item 1 -->
+            <article class="menu-item fade-in" data-category="veg">
+                <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=500&q=80" class="photo"
+                    alt="Vegan Salad">
+                <div class="item-info">
+                    <header>
+                        <h4>Fresh Garden Salad</h4>
+                        <h4 class="price">₹250</h4>
+                    </header>
+                    <p class="item-text">Crisp mixed greens, cherry tomatoes, cucumbers, and our house vinaigrette.</p>
+                    <span class="category-badge veg">Veg</span>
+                </div>
+            </article>
+            <!-- Menu Item 2 -->
+            <article class="menu-item fade-in" data-category="non-veg">
+                <img src="https://cookit.guru/wp-content/uploads/posts/h/how-to-cook-prime-ribeye-steak/5.jpg"
+                    class="photo" alt="Grilled Steak">
+                <div class="item-info">
+                    <header>
+                        <h4>Prime Rib Steak</h4>
+                        <h4 class="price">₹1450</h4>
+                    </header>
+                    <p class="item-text">Perfectly grilled prime rib served with garlic mashed potatoes and asparagus.
+                    </p>
+                    <span class="category-badge non-veg">Non-Veg</span>
+                </div>
+            </article>
+            <!-- Menu Item 3 -->
+            <article class="menu-item fade-in" data-category="non-veg">
+                <img src="https://images.unsplash.com/photo-1563379926898-05f4575a45d8?w=500&q=80" class="photo"
+                    alt="Pasta Seafood">
+                <div class="item-info">
+                    <header>
+                        <h4>Seafood Linguine</h4>
+                        <h4 class="price">₹950</h4>
+                    </header>
+                    <p class="item-text">Fresh linguine tossed with shrimp, scallops, and mussels in a white wine sauce.
+                    </p>
+                    <span class="category-badge non-veg">Non-Veg</span>
+                </div>
+            </article>
+            <!-- Menu Item 4 -->
+            <article class="menu-item fade-in" data-category="drinks">
+                <img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=500&q=80" class="photo"
+                    alt="Cocktail">
+                <div class="item-info">
+                    <header>
+                        <h4>Signature Mojito</h4>
+                        <h4 class="price">₹350</h4>
+                    </header>
+                    <p class="item-text">Refreshing blend of rum, fresh mint, lime juice, and sparkling water.</p>
+                    <span class="category-badge drinks">Drinks</span>
+                </div>
+            </article>
+            <!-- Menu Item 5 -->
+            <article class="menu-item fade-in" data-category="desserts">
+                <img src="https://simplyhomecooked.com/wp-content/uploads/2015/02/lava-cake-gawker-1-1.jpg"
+                    class="photo" alt="Chocolate Cake">
+                <div class="item-info">
+                    <header>
+                        <h4>Lava Chocolate Cake</h4>
+                        <h4 class="price">₹250</h4>
+                    </header>
+                    <p class="item-text">Warm chocolate cake with a gooey center, served with vanilla ice cream.</p>
+                    <span class="category-badge desserts">Desserts</span>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Specials Section -->
+    <section id="specials" class="specials section-padding bg-grey">
+        <div class="section-title fade-in">
+            <h2>Today's Specials</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="specials-center section-center fade-in">
+            <div class="special-card">
+                <div class="discount-label">-20%</div>
+                <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=500&q=80" alt="Special BBQ">
+                <div class="special-info">
+                    <h3>Smoked BBQ Ribs</h3>
+                    <p>Slow-cooked to perfection, coated with our signature tangy BBQ sauce.</p>
+                    <div class="price-container">
+                        <span class="old-price">₹1250</span>
+                        <span class="new-price">₹950</span>
+                    </div>
+                </div>
+            </div>
+            <div class="special-card">
+                <div class="discount-label">Chef's Pick</div>
+                <img src="https://images.unsplash.com/photo-1534080564583-6be75777b70a?w=500&q=80" alt="Grilled Salmon">
+                <div class="special-info">
+                    <h3>Wild Caught Salmon</h3>
+                    <p>Pan-seared salmon fillet over quinoa with a lemon dill beurre blanc.</p>
+                    <div class="price-container">
+                        <span class="new-price">₹1100</span>
+                        <span class="new-price"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery section-padding">
+        <div class="section-title fade-in">
+            <h2>Our Gallery</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="gallery-grid fade-in">
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=500&q=80"
+                    alt="Restaurant Interior">
+                <div class="gallery-overlay"><span>Ambience</span></div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=500&q=80" alt="Dish 1">
+                <div class="gallery-overlay"><span>Culinary Art</span></div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=500&q=80" alt="Dish 2">
+                <div class="gallery-overlay"><span>Fine Dining</span></div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1544148103-0773bf10d330?w=500&q=80" alt="Restaurant Bar">
+                <div class="gallery-overlay"><span>Our Bar</span></div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=500&q=80"
+                    alt="Pasta preparation">
+                <div class="gallery-overlay"><span>Fresh Pasta</span></div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?w=500&q=80"
+                    alt="Dessert preparation">
+                <div class="gallery-overlay"><span>Sweet Treats</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about section-padding bg-grey">
+        <div class="section-center about-center">
+            <article class="about-img fade-in">
+                <img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=600&q=80" class="img"
+                    alt="Our Chef">
+            </article>
+            <article class="about-info fade-in">
+                <h2>Our Story</h2>
+                <div class="underline"></div>
+                <p>Founded in 2024, Joelx Orbit began with a vision to redefine fine dining by blending classic
+                    techniques
+                    with locally sourced ingredients.</p>
+
+                <a href="#contact" class="btn">Contact Us</a>
+            </article>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section-padding">
+        <div class="section-title fade-in">
+            <h2>Get In Touch</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="section-center contact-center fade-in">
+            <article class="contact-info">
+                <h3>Contact Information</h3>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>123 Culinary Avenue, Food District, NY 10001</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <p>+91 8838343971</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>joelroys43@gmail.com</p>
+                </div>
+                <div class="info-item">
+                    <i class="fab fa-instagram"></i>
+                    <p><a href="https://instagram.com/" target="_blank"
+                            style="color: inherit; text-decoration: none;">@joelx_orbit</a></p>
+                </div>
+                <!-- Google Maps Embed Placeholder -->
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.6175407338547!2d-73.98782488428616!3d40.74844097932684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9b3117469%3A0xd134e199a405a163!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1684365735492!5m2!1sen!2sus"
+                        width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </article>
+
+            <article class="contact-form-container">
+                <form class="contact-form">
+                    <h3>Send a Message</h3>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" class="form-control" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" class="form-control" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" class="form-control" rows="5" placeholder="Your Message"
+                            required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-block">Submit</button>
+                </form>
+            </article>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-center section-center">
+            <div class="footer-col">
+                <h4>Joelx Orbit<span>.</span></h4>
+                <p>Elevating your dining experience with exquisite flavors and unparalleled service.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Opening Hours</h4>
+                <p>Mon - Thu: 11:00 AM - 10:00 PM</p>
+                <p>Fri - Sat: 11:00 AM - 11:00 PM</p>
+                <p>Sunday: 12:00 PM - 9:00 PM</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="date"></span> Joelx Orbit. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
